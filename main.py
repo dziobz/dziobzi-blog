@@ -14,7 +14,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-flask_secret_key = os.getenv('app_secret_key')
+flask_secret_key = os.getenv('APP_SECRET_KEY')
 app = Flask(__name__)
 app.config['SECRET_KEY'] = flask_secret_key
 ckeditor = CKEditor(app)
